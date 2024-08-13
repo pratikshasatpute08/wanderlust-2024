@@ -1,6 +1,6 @@
 #-------Stage 1 Start------
 # Base Image
-FROM node:22 AS Frontend
+FROM node:21 AS Frontend
 
 #Setup Working Directory
 WORKDIR /app
@@ -16,7 +16,7 @@ COPY . .
 #--------Stage 1 Complete-------
 #--------Stage 2 Start---------
     
-FROM node:22-slim
+FROM node:21-slim
 
 WORKDIR /app
 
